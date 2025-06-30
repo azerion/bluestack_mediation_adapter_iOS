@@ -1,7 +1,7 @@
 framework module BlueStackAppLovinAdapter {
   umbrella header "BlueStackAppLovinAdapter.h"
-
   export *
+
   module * { export * }
 }
 

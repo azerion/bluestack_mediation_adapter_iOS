@@ -9,11 +9,10 @@ Using BlueStackAppLovinAdapter you will be able to show BlueStack ads through Ap
 - MREC
 - Interstitial
 - Rewarded
-- NativeAd
 
 ## Requirements
-- Xcode 14.0
-- iOS: 12.2
+- Xcode 15.0 or higher
+- iOS: 13.0
 
 ## Integrate BlueStackAppLovinAdapter in your application project
 

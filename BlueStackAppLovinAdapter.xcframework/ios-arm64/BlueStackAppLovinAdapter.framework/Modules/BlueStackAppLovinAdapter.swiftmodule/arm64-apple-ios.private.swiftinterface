@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
-// swift-module-flags: -target arm64-apple-ios12.2 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name BlueStackAppLovinAdapter
-// swift-module-flags-ignorable: -enable-bare-slash-regex
+// swift-compiler-version: Apple Swift version 6.0.3 effective-5.10 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
+// swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name BlueStackAppLovinAdapter
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface
 import AppLovinSDK
 @_exported import BlueStackAppLovinAdapter
 import BlueStackSDK
@@ -9,6 +9,7 @@ import Foundation
 import Swift
 import _Concurrency
 import _StringProcessing
+import _SwiftConcurrencyShims
 @objc @_inheritsConvenienceInitializers public class BlueStackMediationAdapter : AppLovinSDK.ALMediationAdapter {
   @objc override dynamic public var sdkVersion: Swift.String {
     @objc get
@@ -16,24 +17,24 @@ import _StringProcessing
   @objc override dynamic public var adapterVersion: Swift.String {
     @objc get
   }
-  @objc override dynamic public func initialize(with parameters: AppLovinSDK.MAAdapterInitializationParameters, completionHandler: @escaping (AppLovinSDK.MAAdapterInitializationStatus, Swift.String?) -> Swift.Void)
+  @objc override dynamic public func initialize(with parameters: any AppLovinSDK.MAAdapterInitializationParameters, completionHandler: @escaping (AppLovinSDK.MAAdapterInitializationStatus, Swift.String?) -> Swift.Void)
   @objc override dynamic public func destroy()
   @objc override dynamic public init(sdk: AppLovinSDK.ALSdk)
   @objc deinit
 }
 extension BlueStackAppLovinAdapter.BlueStackMediationAdapter : AppLovinSDK.MAAdViewAdapter {
-  @objc dynamic public func loadAdViewAd(for parameters: AppLovinSDK.MAAdapterResponseParameters, adFormat: AppLovinSDK.MAAdFormat, andNotify delegate: AppLovinSDK.MAAdViewAdapterDelegate)
+  @objc dynamic public func loadAdViewAd(for parameters: any AppLovinSDK.MAAdapterResponseParameters, adFormat: AppLovinSDK.MAAdFormat, andNotify delegate: any AppLovinSDK.MAAdViewAdapterDelegate)
 }
 extension BlueStackAppLovinAdapter.BlueStackMediationAdapter : AppLovinSDK.MAInterstitialAdapter {
-  @objc dynamic public func loadInterstitialAd(for parameters: AppLovinSDK.MAAdapterResponseParameters, andNotify delegate: AppLovinSDK.MAInterstitialAdapterDelegate)
-  @objc dynamic public func showInterstitialAd(for parameters: AppLovinSDK.MAAdapterResponseParameters, andNotify delegate: AppLovinSDK.MAInterstitialAdapterDelegate)
+  @objc dynamic public func loadInterstitialAd(for parameters: any AppLovinSDK.MAAdapterResponseParameters, andNotify delegate: any AppLovinSDK.MAInterstitialAdapterDelegate)
+  @objc dynamic public func showInterstitialAd(for parameters: any AppLovinSDK.MAAdapterResponseParameters, andNotify delegate: any AppLovinSDK.MAInterstitialAdapterDelegate)
 }
 extension BlueStackAppLovinAdapter.BlueStackMediationAdapter : AppLovinSDK.MARewardedAdapter {
-  @objc dynamic public func loadRewardedAd(for parameters: AppLovinSDK.MAAdapterResponseParameters, andNotify delegate: AppLovinSDK.MARewardedAdapterDelegate)
-  @objc dynamic public func showRewardedAd(for parameters: AppLovinSDK.MAAdapterResponseParameters, andNotify delegate: AppLovinSDK.MARewardedAdapterDelegate)
+  @objc dynamic public func loadRewardedAd(for parameters: any AppLovinSDK.MAAdapterResponseParameters, andNotify delegate: any AppLovinSDK.MARewardedAdapterDelegate)
+  @objc dynamic public func showRewardedAd(for parameters: any AppLovinSDK.MAAdapterResponseParameters, andNotify delegate: any AppLovinSDK.MARewardedAdapterDelegate)
 }
 extension BlueStackAppLovinAdapter.BlueStackMediationAdapter : AppLovinSDK.MANativeAdAdapter {
-  @objc dynamic public func loadNativeAd(for parameters: AppLovinSDK.MAAdapterResponseParameters, andNotify delegate: AppLovinSDK.MANativeAdAdapterDelegate)
+  @objc dynamic public func loadNativeAd(for parameters: any AppLovinSDK.MAAdapterResponseParameters, andNotify delegate: any AppLovinSDK.MANativeAdAdapterDelegate)
 }
 @_inheritsConvenienceInitializers @objc public class BlueStackKeys : ObjectiveC.NSObject {
   @objc public static let latitude: Swift.String

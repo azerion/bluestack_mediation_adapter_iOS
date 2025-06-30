@@ -1,8 +1,8 @@
 {
   "ABIRoot": {
     "kind": "Root",
-    "name": "TopLevel",
-    "printedName": "TopLevel",
+    "name": "BlueStackAppLovinAdapter",
+    "printedName": "BlueStackAppLovinAdapter",
     "children": [
       {
         "kind": "Import",
@@ -216,7 +216,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "MAAdapterInitializationParameters",
-                "printedName": "AppLovinSDK.MAAdapterInitializationParameters",
+                "printedName": "any AppLovinSDK.MAAdapterInitializationParameters",
                 "usr": "c:objc(pl)MAAdapterInitializationParameters"
               },
               {
@@ -343,7 +343,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "MAAdapterResponseParameters",
-                "printedName": "AppLovinSDK.MAAdapterResponseParameters",
+                "printedName": "any AppLovinSDK.MAAdapterResponseParameters",
                 "usr": "c:objc(pl)MAAdapterResponseParameters"
               },
               {
@@ -355,7 +355,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "MAAdViewAdapterDelegate",
-                "printedName": "AppLovinSDK.MAAdViewAdapterDelegate",
+                "printedName": "any AppLovinSDK.MAAdViewAdapterDelegate",
                 "usr": "c:objc(pl)MAAdViewAdapterDelegate"
               }
             ],
@@ -385,13 +385,13 @@
               {
                 "kind": "TypeNominal",
                 "name": "MAAdapterResponseParameters",
-                "printedName": "AppLovinSDK.MAAdapterResponseParameters",
+                "printedName": "any AppLovinSDK.MAAdapterResponseParameters",
                 "usr": "c:objc(pl)MAAdapterResponseParameters"
               },
               {
                 "kind": "TypeNominal",
                 "name": "MAInterstitialAdapterDelegate",
-                "printedName": "AppLovinSDK.MAInterstitialAdapterDelegate",
+                "printedName": "any AppLovinSDK.MAInterstitialAdapterDelegate",
                 "usr": "c:objc(pl)MAInterstitialAdapterDelegate"
               }
             ],
@@ -421,13 +421,13 @@
               {
                 "kind": "TypeNominal",
                 "name": "MAAdapterResponseParameters",
-                "printedName": "AppLovinSDK.MAAdapterResponseParameters",
+                "printedName": "any AppLovinSDK.MAAdapterResponseParameters",
                 "usr": "c:objc(pl)MAAdapterResponseParameters"
               },
               {
                 "kind": "TypeNominal",
                 "name": "MAInterstitialAdapterDelegate",
-                "printedName": "AppLovinSDK.MAInterstitialAdapterDelegate",
+                "printedName": "any AppLovinSDK.MAInterstitialAdapterDelegate",
                 "usr": "c:objc(pl)MAInterstitialAdapterDelegate"
               }
             ],
@@ -457,13 +457,13 @@
               {
                 "kind": "TypeNominal",
                 "name": "MAAdapterResponseParameters",
-                "printedName": "AppLovinSDK.MAAdapterResponseParameters",
+                "printedName": "any AppLovinSDK.MAAdapterResponseParameters",
                 "usr": "c:objc(pl)MAAdapterResponseParameters"
               },
               {
                 "kind": "TypeNominal",
                 "name": "MARewardedAdapterDelegate",
-                "printedName": "AppLovinSDK.MARewardedAdapterDelegate",
+                "printedName": "any AppLovinSDK.MARewardedAdapterDelegate",
                 "usr": "c:objc(pl)MARewardedAdapterDelegate"
               }
             ],
@@ -493,13 +493,13 @@
               {
                 "kind": "TypeNominal",
                 "name": "MAAdapterResponseParameters",
-                "printedName": "AppLovinSDK.MAAdapterResponseParameters",
+                "printedName": "any AppLovinSDK.MAAdapterResponseParameters",
                 "usr": "c:objc(pl)MAAdapterResponseParameters"
               },
               {
                 "kind": "TypeNominal",
                 "name": "MARewardedAdapterDelegate",
-                "printedName": "AppLovinSDK.MARewardedAdapterDelegate",
+                "printedName": "any AppLovinSDK.MARewardedAdapterDelegate",
                 "usr": "c:objc(pl)MARewardedAdapterDelegate"
               }
             ],
@@ -529,13 +529,13 @@
               {
                 "kind": "TypeNominal",
                 "name": "MAAdapterResponseParameters",
-                "printedName": "AppLovinSDK.MAAdapterResponseParameters",
+                "printedName": "any AppLovinSDK.MAAdapterResponseParameters",
                 "usr": "c:objc(pl)MAAdapterResponseParameters"
               },
               {
                 "kind": "TypeNominal",
                 "name": "MANativeAdAdapterDelegate",
-                "printedName": "AppLovinSDK.MANativeAdAdapterDelegate",
+                "printedName": "any AppLovinSDK.MANativeAdAdapterDelegate",
                 "usr": "c:objc(pl)MANativeAdAdapterDelegate"
               }
             ],
@@ -568,6 +568,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -942,6 +956,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -1133,214 +1161,172 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Volumes\/Development\/BlueStack\/BlueStackAdaptersForiOS\/BlueStackAppLovinAdapter\/BlueStackAppLovinAdapter\/BlueStackNativeAdDelegate.swift",
-      "kind": "StringLiteral",
-      "offset": 181,
-      "length": 25,
-      "value": "\"BlueStackAppLovinAdapter.BlueStackNativeAdDelegate\""
-    },
-    {
-      "filePath": "\/Volumes\/Development\/BlueStack\/BlueStackAdaptersForiOS\/BlueStackAppLovinAdapter\/BlueStackAppLovinAdapter\/BlueStackInterstitialAdapter.swift",
-      "kind": "StringLiteral",
-      "offset": 185,
-      "length": 28,
-      "value": "\"BlueStackAppLovinAdapter.BlueStackInterstitialAdapter\""
-    },
-    {
-      "filePath": "\/Volumes\/Development\/BlueStack\/BlueStackAdaptersForiOS\/BlueStackAppLovinAdapter\/BlueStackAppLovinAdapter\/AdapterConstants.swift",
+      "filePath": "\/Users\/bishnu\/for-ios\/BlueStackAppLovinAdapter\/BlueStackAppLovinAdapter\/AdapterConstants.swift",
       "kind": "StringLiteral",
       "offset": 211,
       "length": 29,
       "value": "\"bluestack_location_latitude\""
     },
     {
-      "filePath": "\/Volumes\/Development\/BlueStack\/BlueStackAdaptersForiOS\/BlueStackAppLovinAdapter\/BlueStackAppLovinAdapter\/AdapterConstants.swift",
+      "filePath": "\/Users\/bishnu\/for-ios\/BlueStackAppLovinAdapter\/BlueStackAppLovinAdapter\/AdapterConstants.swift",
       "kind": "StringLiteral",
       "offset": 281,
       "length": 30,
       "value": "\"bluestack_location_longitude\""
     },
     {
-      "filePath": "\/Volumes\/Development\/BlueStack\/BlueStackAdaptersForiOS\/BlueStackAppLovinAdapter\/BlueStackAppLovinAdapter\/AdapterConstants.swift",
+      "filePath": "\/Users\/bishnu\/for-ios\/BlueStackAppLovinAdapter\/BlueStackAppLovinAdapter\/AdapterConstants.swift",
       "kind": "StringLiteral",
       "offset": 362,
       "length": 33,
       "value": "\"bluestack_location_consent_flag\""
     },
     {
-      "filePath": "\/Volumes\/Development\/BlueStack\/BlueStackAdaptersForiOS\/BlueStackAppLovinAdapter\/BlueStackAppLovinAdapter\/AdapterConstants.swift",
+      "filePath": "\/Users\/bishnu\/for-ios\/BlueStackAppLovinAdapter\/BlueStackAppLovinAdapter\/AdapterConstants.swift",
       "kind": "StringLiteral",
       "offset": 441,
       "length": 26,
       "value": "\"bluestack_viewcontroller\""
     },
     {
-      "filePath": "\/Volumes\/Development\/BlueStack\/BlueStackAdaptersForiOS\/BlueStackAppLovinAdapter\/BlueStackAppLovinAdapter\/AdapterConstants.swift",
+      "filePath": "\/Users\/bishnu\/for-ios\/BlueStackAppLovinAdapter\/BlueStackAppLovinAdapter\/AdapterConstants.swift",
       "kind": "StringLiteral",
       "offset": 520,
       "length": 35,
       "value": "\"bluestack_banner_preferred_height\""
     },
     {
-      "filePath": "\/Volumes\/Development\/BlueStack\/BlueStackAdaptersForiOS\/BlueStackAppLovinAdapter\/BlueStackAppLovinAdapter\/AdapterConstants.swift",
+      "filePath": "\/Users\/bishnu\/for-ios\/BlueStackAppLovinAdapter\/BlueStackAppLovinAdapter\/AdapterConstants.swift",
       "kind": "StringLiteral",
       "offset": 637,
       "length": 8,
       "value": "\"app_id\""
     },
     {
-      "filePath": "\/Volumes\/Development\/BlueStack\/BlueStackAdaptersForiOS\/BlueStackAppLovinAdapter\/BlueStackAppLovinAdapter\/AdapterConstants.swift",
+      "filePath": "\/Users\/bishnu\/for-ios\/BlueStackAppLovinAdapter\/BlueStackAppLovinAdapter\/AdapterConstants.swift",
       "kind": "StringLiteral",
       "offset": 746,
       "length": 39,
       "value": "\"com.azerion.bluestack.ApplovinAdapter\""
     },
     {
-      "filePath": "\/Volumes\/Development\/BlueStack\/BlueStackAdaptersForiOS\/BlueStackAppLovinAdapter\/BlueStackAppLovinAdapter\/AdapterConstants.swift",
+      "filePath": "\/Users\/bishnu\/for-ios\/BlueStackAppLovinAdapter\/BlueStackAppLovinAdapter\/AdapterConstants.swift",
       "kind": "StringLiteral",
       "offset": 857,
       "length": 44,
       "value": "\"BlueStack appId not found in server params\""
     },
     {
-      "filePath": "\/Volumes\/Development\/BlueStack\/BlueStackAdaptersForiOS\/BlueStackAppLovinAdapter\/BlueStackAppLovinAdapter\/AdapterConstants.swift",
+      "filePath": "\/Users\/bishnu\/for-ios\/BlueStackAppLovinAdapter\/BlueStackAppLovinAdapter\/AdapterConstants.swift",
       "kind": "StringLiteral",
       "offset": 948,
       "length": 37,
       "value": "\"Banner placement Id cannot be empty\""
     },
     {
-      "filePath": "\/Volumes\/Development\/BlueStack\/BlueStackAdaptersForiOS\/BlueStackAppLovinAdapter\/BlueStackAppLovinAdapter\/AdapterConstants.swift",
+      "filePath": "\/Users\/bishnu\/for-ios\/BlueStackAppLovinAdapter\/BlueStackAppLovinAdapter\/AdapterConstants.swift",
       "kind": "StringLiteral",
       "offset": 1038,
       "length": 43,
       "value": "\"Interstitial placement Id cannot be empty\""
     },
     {
-      "filePath": "\/Volumes\/Development\/BlueStack\/BlueStackAdaptersForiOS\/BlueStackAppLovinAdapter\/BlueStackAppLovinAdapter\/AdapterConstants.swift",
+      "filePath": "\/Users\/bishnu\/for-ios\/BlueStackAppLovinAdapter\/BlueStackAppLovinAdapter\/AdapterConstants.swift",
       "kind": "StringLiteral",
       "offset": 1130,
       "length": 45,
       "value": "\"Interstitial ad is not ready yet to display\""
     },
     {
-      "filePath": "\/Volumes\/Development\/BlueStack\/BlueStackAdaptersForiOS\/BlueStackAppLovinAdapter\/BlueStackAppLovinAdapter\/AdapterConstants.swift",
+      "filePath": "\/Users\/bishnu\/for-ios\/BlueStackAppLovinAdapter\/BlueStackAppLovinAdapter\/AdapterConstants.swift",
       "kind": "StringLiteral",
       "offset": 1226,
       "length": 42,
       "value": "\"Rewarded Ad placement Id cannot be empty\""
     },
     {
-      "filePath": "\/Volumes\/Development\/BlueStack\/BlueStackAdaptersForiOS\/BlueStackAppLovinAdapter\/BlueStackAppLovinAdapter\/AdapterConstants.swift",
+      "filePath": "\/Users\/bishnu\/for-ios\/BlueStackAppLovinAdapter\/BlueStackAppLovinAdapter\/AdapterConstants.swift",
       "kind": "StringLiteral",
       "offset": 1319,
       "length": 40,
       "value": "\"Native Ad placement Id cannot be empty\""
     },
     {
-      "filePath": "\/Volumes\/Development\/BlueStack\/BlueStackAdaptersForiOS\/BlueStackAppLovinAdapter\/BlueStackAppLovinAdapter\/AdapterConstants.swift",
+      "filePath": "\/Users\/bishnu\/for-ios\/BlueStackAppLovinAdapter\/BlueStackAppLovinAdapter\/AdapterConstants.swift",
       "kind": "StringLiteral",
       "offset": 1404,
       "length": 41,
       "value": "\"Rewarded ad is not ready yet to display\""
     },
     {
-      "filePath": "\/Volumes\/Development\/BlueStack\/BlueStackAdaptersForiOS\/BlueStackAppLovinAdapter\/BlueStackAppLovinAdapter\/AdapterConstants.swift",
+      "filePath": "\/Users\/bishnu\/for-ios\/BlueStackAppLovinAdapter\/BlueStackAppLovinAdapter\/AdapterConstants.swift",
       "kind": "StringLiteral",
       "offset": 1489,
       "length": 56,
       "value": "\"Found nil viewcontroller while presenting rewareded ad\""
     },
     {
-      "filePath": "\/Volumes\/Development\/BlueStack\/BlueStackAdaptersForiOS\/BlueStackAppLovinAdapter\/BlueStackAppLovinAdapter\/AdapterConstants.swift",
+      "filePath": "\/Users\/bishnu\/for-ios\/BlueStackAppLovinAdapter\/BlueStackAppLovinAdapter\/AdapterConstants.swift",
       "kind": "IntegerLiteral",
       "offset": 1621,
       "length": 3,
       "value": "100"
     },
     {
-      "filePath": "\/Volumes\/Development\/BlueStack\/BlueStackAdaptersForiOS\/BlueStackAppLovinAdapter\/BlueStackAppLovinAdapter\/AdapterConstants.swift",
+      "filePath": "\/Users\/bishnu\/for-ios\/BlueStackAppLovinAdapter\/BlueStackAppLovinAdapter\/AdapterConstants.swift",
       "kind": "IntegerLiteral",
       "offset": 1671,
       "length": 3,
       "value": "101"
     },
     {
-      "filePath": "\/Volumes\/Development\/BlueStack\/BlueStackAdaptersForiOS\/BlueStackAppLovinAdapter\/BlueStackAppLovinAdapter\/AdapterConstants.swift",
+      "filePath": "\/Users\/bishnu\/for-ios\/BlueStackAppLovinAdapter\/BlueStackAppLovinAdapter\/AdapterConstants.swift",
       "kind": "IntegerLiteral",
       "offset": 1727,
       "length": 3,
       "value": "102"
     },
     {
-      "filePath": "\/Volumes\/Development\/BlueStack\/BlueStackAdaptersForiOS\/BlueStackAppLovinAdapter\/BlueStackAppLovinAdapter\/AdapterConstants.swift",
+      "filePath": "\/Users\/bishnu\/for-ios\/BlueStackAppLovinAdapter\/BlueStackAppLovinAdapter\/AdapterConstants.swift",
       "kind": "IntegerLiteral",
       "offset": 1779,
       "length": 3,
       "value": "103"
     },
     {
-      "filePath": "\/Volumes\/Development\/BlueStack\/BlueStackAdaptersForiOS\/BlueStackAppLovinAdapter\/BlueStackAppLovinAdapter\/AdapterConstants.swift",
+      "filePath": "\/Users\/bishnu\/for-ios\/BlueStackAppLovinAdapter\/BlueStackAppLovinAdapter\/AdapterConstants.swift",
       "kind": "IntegerLiteral",
       "offset": 1833,
       "length": 3,
       "value": "104"
     },
     {
-      "filePath": "\/Volumes\/Development\/BlueStack\/BlueStackAdaptersForiOS\/BlueStackAppLovinAdapter\/BlueStackAppLovinAdapter\/AdapterConstants.swift",
+      "filePath": "\/Users\/bishnu\/for-ios\/BlueStackAppLovinAdapter\/BlueStackAppLovinAdapter\/AdapterConstants.swift",
       "kind": "IntegerLiteral",
       "offset": 1881,
       "length": 3,
       "value": "105"
     },
     {
-      "filePath": "\/Volumes\/Development\/BlueStack\/BlueStackAdaptersForiOS\/BlueStackAppLovinAdapter\/BlueStackAppLovinAdapter\/AdapterConstants.swift",
+      "filePath": "\/Users\/bishnu\/for-ios\/BlueStackAppLovinAdapter\/BlueStackAppLovinAdapter\/AdapterConstants.swift",
       "kind": "IntegerLiteral",
       "offset": 1928,
       "length": 3,
       "value": "106"
     },
     {
-      "filePath": "\/Volumes\/Development\/BlueStack\/BlueStackAdaptersForiOS\/BlueStackAppLovinAdapter\/BlueStackAppLovinAdapter\/AdapterConstants.swift",
+      "filePath": "\/Users\/bishnu\/for-ios\/BlueStackAppLovinAdapter\/BlueStackAppLovinAdapter\/AdapterConstants.swift",
       "kind": "IntegerLiteral",
       "offset": 1980,
       "length": 3,
       "value": "107"
     },
     {
-      "filePath": "\/Volumes\/Development\/BlueStack\/BlueStackAdaptersForiOS\/BlueStackAppLovinAdapter\/BlueStackAppLovinAdapter\/BlueStackNativeAdapter.swift",
-      "kind": "StringLiteral",
-      "offset": 178,
-      "length": 22,
-      "value": "\"BlueStackAppLovinAdapter.BlueStackNativeAdapter\""
-    },
-    {
-      "filePath": "\/Volumes\/Development\/BlueStack\/BlueStackAdaptersForiOS\/BlueStackAppLovinAdapter\/BlueStackAppLovinAdapter\/BlueStackBannerAdapter.swift",
-      "kind": "StringLiteral",
-      "offset": 179,
-      "length": 22,
-      "value": "\"BlueStackAppLovinAdapter.BlueStackBannerAdapter\""
-    },
-    {
-      "filePath": "\/Volumes\/Development\/BlueStack\/BlueStackAdaptersForiOS\/BlueStackAppLovinAdapter\/BlueStackAppLovinAdapter\/BlueStackInitializer.swift",
+      "filePath": "\/Users\/bishnu\/for-ios\/BlueStackAppLovinAdapter\/BlueStackAppLovinAdapter\/BlueStackInitializer.swift",
       "kind": "BooleanLiteral",
       "offset": 251,
       "length": 5,
       "value": "false"
-    },
-    {
-      "filePath": "\/Volumes\/Development\/BlueStack\/BlueStackAdaptersForiOS\/BlueStackAppLovinAdapter\/BlueStackAppLovinAdapter\/BlueStackRewardedAdapter.swift",
-      "kind": "StringLiteral",
-      "offset": 179,
-      "length": 24,
-      "value": "\"BlueStackAppLovinAdapter.BlueStackRewardedAdapter\""
-    },
-    {
-      "filePath": "\/Volumes\/Development\/BlueStack\/BlueStackAdaptersForiOS\/BlueStackAppLovinAdapter\/BlueStackAppLovinAdapter\/BlueStackNativeAd.swift",
-      "kind": "StringLiteral",
-      "offset": 173,
-      "length": 17,
-      "value": "\"BlueStackAppLovinAdapter.BlueStackNativeAd\""
     }
   ]
 }

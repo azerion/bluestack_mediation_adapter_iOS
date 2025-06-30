@@ -5,7 +5,7 @@ import PackageDescription
 
 let package = Package(
     name: "BlueStackAppLovinAdapter",
-    platforms: [.iOS(.v12)],
+    platforms: [.iOS(.v13)],
     products: [
         .library(
             name: "BlueStackAppLovinAdapter",
@@ -13,7 +13,7 @@ let package = Package(
     ],
     dependencies: [
         .package(url: "https://github.com/AppLovin/AppLovin-MAX-Swift-Package.git", exact: "12.6.1"),
-        .package(url: "https://github.com/azerion/BlueStackSDK.git", exact: "4.4.8"),
+        .package(url: "https://github.com/azerion/BlueStackSDK.git", from: "5.1.1"),
     ],
     targets: [
         .target(name: "BlueStackAppLovinAdapterTarget",
